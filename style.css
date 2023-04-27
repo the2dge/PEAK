@@ -253,6 +253,37 @@
     }
 }
 
+/* this media query is to support smaller screen */
+@media screen and (max-width: 600px) {
+  .theme-page-left h1{
+    box-shadow: -4px 6px black;
+    padding-bottom: 5px;
+    color: rgba(255, 255, 255, 0.7);
+    font-weight: 600;
+    font-size: 40px;
+    position: absolute;
+    top: 72%;
+    left: 10%;
+}
+.theme-page-left p{
+    width: 200px;
+    text-shadow: -4px 6px rgba(0, 10%, 20%, 0.6);
+    color: white;
+    font-weight: 600;
+    position: absolute;
+    top: 87%;
+    left: 11%;
+}
+#contact h1{
+    margin-left: auto;
+    text-shadow: -10px 6px lightpink;
+    font-size: 24px;
+}
+#contact img{
+    width: 50px;
+    height: 50px;
+}
+}
 .mask{
 	width: 100%;
 	height: 100%;
