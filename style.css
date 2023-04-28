@@ -1,18 +1,10 @@
-/*body{
-	background-image: url('./ChiLai2.jpg');
-	background-size: cover;
-	background-repeat:   no-repeat;
-    background-position: top center; 
-    
-}
-*/
 :root {
   --navbar-bg-color: hsl(0, 0%, 15%);
   --navbar-text-color: hsl(0, 0%, 85%);
   --navbar-text-color-focus: white;
   --navbar-bg-contrast: hsl(0, 0%, 25%);
 }
-*{
+html, body{
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -177,11 +169,13 @@
 .theme-page {
     position: relative;
     height: 100vh;
-    background-image: url('./background.jpg');
+    background-image: url('background.jpg');
     background-size: cover;
-    background-position: bottom;
+    background-position: center;
     overflow: hidden;
 }
+
+
 
 .image-mask {
     position: absolute;
@@ -198,7 +192,7 @@
     font-weight: 600;
     font-size: 70px;
     position: absolute;
-    top: 72%;
+    top: 64%;
     left: 10%;
 }
 .theme-page-left p{
@@ -207,29 +201,65 @@
     color: white;
     font-weight: 600;
     position: absolute;
-    top: 87%;
+    top: 85%;
     left: 11%;
+}
+
+#cloud-circle {
+    width: 170px;
+    height: 85px;
+    border-radius: 50%;
+    filter: url(#filter);
+    box-shadow: 0px 400px 80px 0px #fff;
+    position: absolute;
+    top: -220px;
+    left: -620px;
+    animation: moveCloud 20s linear infinite;
+    transform: rotateX(51deg);
+}
+#cloud-circle2 {
+    width: 170px;
+    height: 85px;
+    border-radius: 50%;
+    filter: url(#filter);
+    box-shadow: 0px 400px 60px 0px #fff;
+    position: absolute;
+    top: -220px;
+    left: -620px;
+    animation: moveCloud 29s linear infinite;
+    transform: rotateX(48deg);
+}
+@keyframes moveCloud {
+  0% {
+    left: -250px;
+  }
+  100% {
+    left: 100%;
+  }
 }
 /* Section styles */
 .about-box, .activities-box, .footer-box {
     width: 100%;
-    padding: 30px;
+    padding: 20px;
 }
 
 .about-box img{
     width 25px;
     height: 40px;
 }
-.other-page-box h1{
-    position: absolute;
-    left: 20%;
-    top: 50%;
+
+.other-page-box{
+  color: hsl(0, 40%, 40%);
+  background-color: #fefefe;
+  padding: 20px;
+}
+
+}
+.other-page-box span{
     color: black;
+    font-size: 16px;
 }
-.other-page-box img{
-    width 25px;
-    height: 40px;
-}
+.
 #contact{
     display: flex;
     justify-content: space-between;
@@ -244,16 +274,6 @@
     height: 60px;
 }
 /* Responsive styles */
-@media (max-width: 768px) {
-    .nav-links {
-        display: none;
-    }
-    .hamburger-btn {
-        display: flex;
-    }
-}
-
-/* this media query is to support smaller screen */
 @media screen and (max-width: 600px) {
   .theme-page-left h1{
     box-shadow: -4px 6px black;
@@ -284,15 +304,4 @@
     height: 50px;
 }
 }
-.mask{
-	width: 100%;
-	height: 100%;
-    mask-image: linear-gradient(to bottom, #000, #000),
-    linear-gradient(to bottom, #000, #000),
-    linear-gradient(to bottom, #000, #000),
-    linear-gradient(to bottom, #000, #000),
-    linear-gradient(to bottom, #000, #000);
-    mask-size: 18% 70%;
-    mask-position: 0 100%, 25% 25%, 50% 50%, 75% 0, 100% 50%;
-    mask-repeat: no-repeat;
-}
+
