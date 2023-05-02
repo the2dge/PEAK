@@ -312,6 +312,14 @@ html, body{
 .activity-child p{
   color: white;
 }
+
+.activity-Fuji {
+  text-align: center;
+}
+.activity-Fuji img{
+  width: 100%;
+  mergin-left: -40px;
+}
 }
 .other-page-box span{
     color: black !important;
