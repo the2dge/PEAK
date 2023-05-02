@@ -293,7 +293,7 @@ html, body{
   margin-top: 10px;
   margin-left: 20px;
   margin-right: 20px;
-  box-shadow: 4px 6px 6px;
+  box-shadow: 4px 10px 6px black;
 }
 .activities-box .activity-child:last-child img{
   width: 250px;
@@ -301,7 +301,7 @@ html, body{
   margin-top: 10px;
   margin-left: 20px;
   margin-right: 20px;
-  box-shadow: 4px 6px 6px;
+  box-shadow: 4px 10px 6px;
 }
 
 .activity-child {
