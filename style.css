@@ -250,6 +250,7 @@ html, body{
 .about-box,  .other-page-box {
     width: 90%;
     margin-left: 40px;
+    margin-right: 40px;
 }
 
 .footer-box{
@@ -399,11 +400,31 @@ html, body{
 .contact h1{
     margin-left: auto;
     text-shadow: -10px 6px lightpink;
-    font-size: 18px;
+    font-size: 12px;
 }
 .contact img{
     width: 50px;
     height: 50px;
+}
+.footer-box h1{
+    margin-left: 10px;
+    font-size: 12px;
+   
+}
+.footer-box img:first-child{
+    margin-left: 10px;
+    width: 40px;
+    height: 40px;
+}
+.footer-box img:last-child{
+    margin-right: 10px;
+    width: 40px;
+    height: 40px;
+}
+.about-box,  .other-page-box {
+    width: 90%;
+    margin-left: 20px;
+    margin-right: 40px;
 }
 #navbar img{
     width: 45px;
