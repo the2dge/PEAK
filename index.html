@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mountclimbing Agent</title>
-    <link rel="icon" type="image/svg" sizes="512x512" href="logo.svg">
+    <title>Mount climbing Agent</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
     <script defer src="main.js"></script>
 </head>
@@ -14,9 +15,11 @@
     <header id="navbar">
       <nav class="navbar-container container">
         <a href="./index.html" class="home-link">
-          <div class="navbar-logo"><img src="./logo.svg"></div>
-          The PEAK
+          <img src="./logo.svg">
+          <span class="navbar-text">The PEAK</span>
         </a>
+        <input type="text" id="search-box" placeholder="找活動 Search activities...">
+
         <button
           type="button"
           id="navbar-toggle"
@@ -44,7 +47,7 @@ href="./contact.html">Contact</a></li>
     </header>
 
 <!-- The start of the theme page-->
-<div class="theme-page">
+<section class="theme-page">
   <svg width="0" height="0" xmlns="http://www.w3.org/2000/svg">
        <filter id="filter">
       <feTurbulence type="fractalNoise" baseFrequency=".01" numOctaves="10" />
@@ -56,28 +59,55 @@ href="./contact.html">Contact</a></li>
       <h1>GO WILD!</h1>
       <p>Explore the nature with us</p>
     </div>
-</div>
+</section>
 <section id="about" class="about-box">
     <!-- About content -->
     <h1>關於我們</h1>
     <h3>我們的故事</h3>
-    <p>The PEAK 成立於 2000 年，由一群充滿激情的登山者創立，他們發現了登上最高峰<img src="./mount.svg">的變革力量。 我們對高山的熱愛和登頂的興奮感激勵著我們幫助其他人體驗同樣的成就感和與大自然的聯繫。    </p> 
+    <p>The PEAK 成立於 2000 年，由一群充滿激情的登山者創立，他們發現了登上最高峰<img src="./mount.svg">鼓舞的力量, 我們對高山的熱愛和登頂的興奮感激勵著我們幫助其他人體驗同樣的成就感和與大自然的聯繫。    </p> 
     <p>我們相信，無論專業水平如何，每個人都應該有機會探索令人嘆為觀止的山脈美景。 這就是我們創建 The PEAK 的原因 <br> -— 為各種技能水平的登山者提供個性化的專家指導。</p>
     <br>
     <h3>我們的任務</h3>
-    <p> 在 ThePEAK 我們的使命是幫助冒險家實現他們的登山目標，同時確保他們的安全和舒適。 我們努力為我們的客戶提供無與倫比的支持和服務，讓他們專注於旅途的樂趣，而不必擔心物流問題。</p>
+    <p> 在 ThePEAK 我們的使命是幫助冒險家實現他們的登山目標，同時確保他們的安全和舒適。 我們努力為我們的客戶提供無與倫比的支持和服務，讓他們專注於旅途的樂趣，而不必擔心物流等瑣碎問題。</p>
 </section>
 
 <section id="activities" class="activities-box">
-    <!-- Activities content -->
+    <!-- Activities content --> 
+    <h1>高山活動 Mountain Activities</h1>
+    <div class="activity-child">
+    <img src='./Qilai.jpg' alt="合歡山 Hehuanshan"> 
+    <p>合歡山 Hehuanshan</p>
+    </div>
+    <div class="activity-child">
+    <img src="./background.jpg" alt="奇萊山 Qilai Mountain"> 
+    <p>奇萊山 Qilai Mountain</p>
+    </div>
+    <div class="activity-child">
+    <img src="./mountwedding.jpg" alt="Mountain Wedding">
+    <p>高山婚禮 Mountain Wedding</p>
+    </div>
+    <div class="activity-child">
+      <a href="Fuji.html"><img src="fuji.jpeg" alt="富士山 Mount Fuji">
+    <p>富士山 Mount Fuji</p></a>
+    </div>
+    <div class="activity-child">
+      <img src="fuji2.jpeg" alt="富士山 Mount Fuji">
+    <p>富士山 Mount Fuji</p>
+    </div>
 </section>
 
-<footer id="contact" class="footer-box">
+<footer class="footer-box">
     <!-- Contact info -->
-    <img src='./addressIcon.png' >
-        <div><h1>Address: 1, First St., Taipei</h1></div>
-        <h3>Find me @</h3>
-        <div id="social-media"><a href="https://line.me/ti/p/yeunghoiming" target="_blank"><img src='./LINE_logo.svg'></a> </div>
+    
+    <div class="address-box"><img src='./addressIcon.png' ><h1>Address: 1, First St., Taipei</h1></div>
+        <div id="social-media"><h3>Find me @</h3>
+          <div class="line-container">
+          <a href="https://line.me/ti/p/yeunghoiming" target="_blank"><img src='./LINE_logo.svg'></a> 
+          <div class="qr-code"><a href="https://line.me/R/ti/p/yeunghoiming">https://line.me/R/ti/p/yeunghoiming</a>
+          <img src="./LineQR.jpg" alt="QR Code">
+          </div>
+        </div>
+        </div>
 
 </footer>
 
